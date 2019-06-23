@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Sample video player</title>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col embed-responsive embed-responsive-16by9">
+            <video id="trailer-video"
+                   class="embed-responsive-item"
+                   preload="none"
+                   poster="http://media.w3.org/2010/05/sintel/poster.png">
+
+                <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4"/>
+                <source id="webm" src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm"/>
+                <source id="ogv" src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg"/>
+
+                <p>Your user agent does not support the HTML5 Video element.</p>
+            </video>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="button"
+                    id="play-btn"
+                    class="btn btn-outline-secondary btn-lg">
+                Play
+            </button>
+
+            <button type="button"
+                    id="forward-btn"
+                    class="btn btn-outline-secondary btn-lg">
+                Forward
+            </button>
+
+            <button type="button"
+                    id="rewind-btn"
+                    class="btn btn-outline-secondary btn-lg">
+                Rewind
+            </button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
